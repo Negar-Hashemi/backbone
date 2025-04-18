@@ -31,6 +31,8 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+
+      - name: Install libssl in ubuntu
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt install libssl1.1
 
